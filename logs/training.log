@@ -1,0 +1,71 @@
+2026-01-17 17:50:17,081 | INFO | 🚀 Training started
+2026-01-17 17:50:17,081 | INFO | Loading dataset from /Users/rishigarg/Desktop/sepe/data/synthetic_lead_conversion_2000.csv
+2026-01-17 17:50:17,091 | INFO | Split sizes → Train: 1400, Val: 300, Test: 300
+2026-01-17 17:50:17,091 | INFO | 🔹 Training model: Logistic Regression
+2026-01-17 17:50:17,107 | INFO | Logistic Regression | Validation ROC-AUC: 0.8453, Accuracy: 0.7433
+2026-01-17 17:50:17,109 | INFO | ✅ Saved model: /Users/rishigarg/Desktop/sepe/models/logistic_regression_pipeline.joblib
+2026-01-17 17:50:17,109 | INFO | 🔹 Training model: Random Forest
+2026-01-17 17:50:17,328 | INFO | Random Forest | Validation ROC-AUC: 0.8285, Accuracy: 0.7767
+2026-01-17 17:50:17,382 | INFO | ✅ Saved model: /Users/rishigarg/Desktop/sepe/models/random_forest_pipeline.joblib
+2026-01-17 17:50:17,382 | INFO | 🔹 Training model: Gradient Boosting
+2026-01-17 17:50:17,574 | INFO | Gradient Boosting | Validation ROC-AUC: 0.8306, Accuracy: 0.7767
+2026-01-17 17:50:17,577 | INFO | ✅ Saved model: /Users/rishigarg/Desktop/sepe/models/gradient_boosting_pipeline.joblib
+2026-01-17 17:50:17,577 | INFO | 
+📊 MODEL PERFORMANCE SUMMARY (Validation Set)
+2026-01-17 17:50:17,578 | INFO | 
+              Model  Validation ROC-AUC  Validation Accuracy
+Logistic Regression              0.8453               0.7433
+  Gradient Boosting              0.8306               0.7767
+      Random Forest              0.8285               0.7767
+2026-01-17 17:50:17,578 | INFO | 🎉 Training completed successfully
+2026-01-17 18:03:18,822 | INFO | 🚀 Training started
+2026-01-17 18:03:18,824 | INFO | Loading dataset from /Users/rishigarg/Desktop/sepe/data/synthetic_lead_conversion_2000.csv
+2026-01-17 18:03:18,831 | INFO | Split sizes → Train: 1400, Val: 300, Test: 300
+2026-01-17 18:03:18,832 | ERROR | ❌ Training failed
+Traceback (most recent call last):
+  File "/Users/rishigarg/Desktop/sepe/train/train_ensemble.py", line 288, in main
+    train(args.data_path, logger)
+  File "/Users/rishigarg/Desktop/sepe/train/train_ensemble.py", line 196, in train
+    "Gradient Boosting": GradientBoostingClassifier(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GradientBoostingClassifier.__init__() got an unexpected keyword argument 'sub_sample'
+2026-01-17 18:03:59,085 | INFO | 🚀 Training started
+2026-01-17 18:03:59,085 | INFO | Loading dataset from /Users/rishigarg/Desktop/sepe/data/synthetic_lead_conversion_2000.csv
+2026-01-17 18:03:59,093 | INFO | Split sizes → Train: 1400, Val: 300, Test: 300
+2026-01-17 18:03:59,093 | INFO | 🔹 Training model: Logistic Regression
+2026-01-17 18:03:59,107 | INFO | Logistic Regression | Validation ROC-AUC: 0.8453, Accuracy: 0.7433
+2026-01-17 18:03:59,109 | INFO | ✅ Saved model: /Users/rishigarg/Desktop/sepe/models/logistic_regression_pipeline.joblib
+2026-01-17 18:03:59,109 | INFO | 🔹 Training model: Random Forest
+2026-01-17 18:03:59,346 | INFO | Random Forest | Validation ROC-AUC: 0.8422, Accuracy: 0.7233
+2026-01-17 18:03:59,381 | INFO | ✅ Saved model: /Users/rishigarg/Desktop/sepe/models/random_forest_pipeline.joblib
+2026-01-17 18:03:59,381 | INFO | 🔹 Training model: Gradient Boosting
+2026-01-17 18:03:59,622 | INFO | Gradient Boosting | Validation ROC-AUC: 0.8264, Accuracy: 0.7833
+2026-01-17 18:03:59,627 | INFO | ✅ Saved model: /Users/rishigarg/Desktop/sepe/models/gradient_boosting_pipeline.joblib
+2026-01-17 18:03:59,628 | INFO | 
+📊 MODEL PERFORMANCE SUMMARY (Validation Set)
+2026-01-17 18:03:59,629 | INFO | 
+              Model  Validation ROC-AUC  Validation Accuracy
+Logistic Regression              0.8453               0.7433
+      Random Forest              0.8422               0.7233
+  Gradient Boosting              0.8264               0.7833
+2026-01-17 18:03:59,629 | INFO | 🎉 Training completed successfully
+2026-01-17 18:05:43,590 | INFO | 🚀 Training started
+2026-01-17 18:05:43,590 | INFO | Loading dataset from /Users/rishigarg/Desktop/sepe/data/synthetic_lead_conversion_2000.csv
+2026-01-17 18:05:43,597 | INFO | Split sizes → Train: 1400, Val: 300, Test: 300
+2026-01-17 18:05:43,598 | INFO | 🔹 Training model: Logistic Regression
+2026-01-17 18:05:43,611 | INFO | Logistic Regression | Validation ROC-AUC: 0.8453, Accuracy: 0.7433
+2026-01-17 18:05:43,613 | INFO | ✅ Saved model: /Users/rishigarg/Desktop/sepe/models/logistic_regression_pipeline.joblib
+2026-01-17 18:05:43,613 | INFO | 🔹 Training model: Random Forest
+2026-01-17 18:05:43,847 | INFO | Random Forest | Validation ROC-AUC: 0.8422, Accuracy: 0.7233
+2026-01-17 18:05:43,881 | INFO | ✅ Saved model: /Users/rishigarg/Desktop/sepe/models/random_forest_pipeline.joblib
+2026-01-17 18:05:43,881 | INFO | 🔹 Training model: Gradient Boosting
+2026-01-17 18:05:44,112 | INFO | Gradient Boosting | Validation ROC-AUC: 0.8280, Accuracy: 0.7667
+2026-01-17 18:05:44,116 | INFO | ✅ Saved model: /Users/rishigarg/Desktop/sepe/models/gradient_boosting_pipeline.joblib
+2026-01-17 18:05:44,116 | INFO | 
+📊 MODEL PERFORMANCE SUMMARY (Validation Set)
+2026-01-17 18:05:44,118 | INFO | 
+              Model  Validation ROC-AUC  Validation Accuracy
+Logistic Regression              0.8453               0.7433
+      Random Forest              0.8422               0.7233
+  Gradient Boosting              0.8280               0.7667
+2026-01-17 18:05:44,118 | INFO | 🎉 Training completed successfully
